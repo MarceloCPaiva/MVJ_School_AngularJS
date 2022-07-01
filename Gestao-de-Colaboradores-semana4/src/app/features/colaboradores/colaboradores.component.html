@@ -1,0 +1,11 @@
+<h1 appColor>{{ titulo }}</h1>
+
+<div class="colaborador">
+  <div *ngFor="let infoColaborador of colaboradores" class="content">
+    <p *ngIf="exibeColaborador">Id: {{ infoColaborador.id }}</p>
+    <p *ngIf="exibeColaborador">Nome: {{ infoColaborador.nome }}</p>
+    <p *ngIf="exibeColaborador">Salário: {{ infoColaborador.salario }}</p>
+    <p *ngIf="exibeColaborador">Cargo: {{ infoColaborador.cargo }}</p>
+  </div>
+  <button (click)="mostraColaborador()">Colaborador</button>
+</div>

@@ -1,0 +1,30 @@
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  background-color: #d2d3f8;
+}
+.conteiner {
+  display: flex;
+}
+
+nav ul {
+  display: flex;
+}
+nav ul li {  
+  list-style: none;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #606273;
+  cursor: pointer;
+}
+
+nav ul li:hover {
+  background-color: #b4b5d2;
+  color: #fff;
+  border-radius: 5px;
+}
