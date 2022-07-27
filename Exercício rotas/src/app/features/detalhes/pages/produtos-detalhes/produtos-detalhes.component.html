@@ -1,0 +1,42 @@
+<!-- <div class="conteiner">
+  <div class="produto" *ngFor="let produto of productsList">
+    <div class="card-produto">
+      <p class="descricao">{{ produto.descricao }}</p>
+      <img src="{{ produto.img }}" />
+      <p class="preco">Preço: {{ produto.preco | currency: "R$" }}</p>
+      <p *ngIf="produto.disponivel"></p>
+      <p>
+        Pagamento a vista:
+        {{ precoComDesconto(produto.preco) | currency: "R$" }}
+      </p>
+      <p>{{ produto.disponivel ? "Em estoque" : "Produto em falta" }}</p>
+    </div>
+    <button class="button" (click)="comprar()">Comprar</button>
+  </div>
+</div> -->
+<div class="conteiner">
+  <div class="produto" *ngFor="let produto of productsList">
+    <div class="card-produto">
+      <p class="descricao">{{ produto.descricao }}</p>
+      <img src="{{ produto.img }}" />
+      <p class="preco">Preço: {{ produto.preco | currency: "R$" }}</p>
+      <p *ngIf="produto.disponivel"></p>
+      <p>
+        Pagamento a vista:
+        {{ precoComDesconto(produto.preco) | currency: "R$" }}
+      </p>
+      <p>{{ produto.disponivel ? "Em estoque" : "Produto em falta" }}</p>
+      <button class="mais-info">Mais Informações</button>
+    </div>
+    <button
+      class="button"
+      (click)="comprar()"
+      [ngClass]="{
+        'em-estoque': produto.disponivel,
+        'sem-estoque': !produto.disponivel
+      }"
+    >
+      Comprar
+    </button>
+  </div>
+</div>

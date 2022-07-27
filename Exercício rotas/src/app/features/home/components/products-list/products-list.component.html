@@ -1,0 +1,10 @@
+<h1 appHover>{{ titulo | uppercase }}</h1>
+<div class="conteiner">
+  <div class="produto" *ngFor="let produto of products">
+    <div class="card-produto">
+      <p class="descricao">{{ produto.descricao }}</p>
+      <img src="{{ produto.img }}" />
+    </div>
+    <button class="button" [routerLink]="['/detalhes']">Detalhes</button>
+  </div>
+</div>
