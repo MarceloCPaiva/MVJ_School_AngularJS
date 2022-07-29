@@ -1,0 +1,80 @@
+h1 {
+  margin: 30px;
+}
+
+.conteiner {
+  margin: 20px;
+  display: flex;
+}
+
+.produto {
+  border: 1px solid #ccc;
+  width: 270px;
+  height: 250px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 8px;
+}
+
+img {
+  width: 230px;
+  height: 230px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+
+p {
+  padding: 8px;
+}
+
+.preco {
+  font-weight: bold;
+}
+
+.descricao {
+  text-align: center;
+  font-weight: bold;
+}
+
+.button {
+  cursor: pointer;
+  padding: 7px;
+  font-weight: bold;
+  border: 1px solid #979797;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background-color: #ccc;
+  transition: all 0.2s ease-in;
+}
+
+.mais-info {
+  border-radius: 5px;
+  padding: 4px;
+  cursor: pointer;
+  border: 1px solid #979797;
+  text-align: center;
+  margin-top: 5px;
+  margin-left: 15px;
+}
+
+.mais-info:hover {
+  background-color: #ccc;
+  transition: all 0.2s ease-in;
+}
+
+.em-estoque {
+  background-color: #fff;
+}
+
+.sem-estoque {
+  text-decoration: line-through;
+}
+
+.sem-estoque:hover {
+  background-color: #cf0000;
+}

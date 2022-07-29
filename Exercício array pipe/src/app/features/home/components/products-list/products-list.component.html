@@ -1,0 +1,14 @@
+<h1 appHover>{{ titulo | uppercase }}</h1>
+<div class="conteiner">
+  <div class="produto" *ngFor="let list of tasks">
+    <div class="card-produto">
+      <p>DESCRIÇÃO: {{ list.description }}</p>
+      <p>COMPLETADA: {{ list.completed }}</p>
+      <p>
+        DATA DE INCLUSÃO: <br />
+        {{ list.inclusionDate | date: "dd/MM/yyyy" }}
+      </p>
+    </div>
+    <!-- <button class="button" [routerLink]="['/detalhes']">Detalhes</button> -->
+  </div>
+</div>
